@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЖЕМ-Трейдинг | Таможенный представитель и логистика</title>
+    
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Наш CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта с навигацией -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">ДЖЕМ-<span>Трейдинг</span></div>
+            <nav class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#journey">Путь груза</a>
+                <a href="#transport">Перевозки</a>
+                <a href="#about">О компании</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <button class="contact-header" id="headerContactBtn">Связаться</button>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <div class="fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-alt"></i> Свидетельство ФТС РФ №1156 от 17.03.2020
+                </div>
+                <h1>
+                    Ваш груз проходит 
+                    <span class="accent-text text-gradient">путь от порта</span><br>
+                    до получателя под нашим контролем
+                </h1>
+                <p class="hero-description">Полный цикл перевозки: морские, железнодорожные и автомобильные перевозки с таможенным оформлением "под ключ".</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20 лет</span>
+                        <span class="stat-label">на рынке</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">131K</span>
+                        <span class="stat-label">тонн грузов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">586+</span>
+                        <span class="stat-label">клиентов</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image fade-up">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Контейнеровоз в море" class="hero-img">
+                    <div class="image-caption">Международные морские перевозки</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок с ключевыми показателями -->
+    <section class="stats-panel">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card fade-up">
+                    <div class="number">20</div>
+                    <div class="label">лет безупречной работы</div>
+                </div>
+                <div class="stat-card fade-up">
+                    <div class="number">131 098</div>
+                    <div class="label">тонн перевезено</div>
+                </div>
+                <div class="stat-card fade-up">
+                    <div class="number">77 434</div>
+                    <div class="label">морских контейнеров</div>
+                </div>
+                <div class="stat-card fade-up">
+                    <div class="number">586</div>
+                    <div class="label">довольных клиентов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === ПУТЬ ГРУЗА: визуальная история === -->
+    <section id="journey" class="journey-section">
+        <div class="container">
+            <h2 class="section-title fade-up">Путешествие вашего груза</h2>
+            <p class="section-subtitle fade-up">От порта отправления до склада получателя — каждый этап под контролем</p>
+            
+            <!-- Прогресс-бар пути -->
+            <div class="journey-progress">
+                <div class="progress-bar" id="journeyProgress"></div>
+                <div class="progress-steps">
+                    <div class="step" data-step="1">1</div>
+                    <div class="step" data-step="2">2</div>
+                    <div class="step" data-step="3">3</div>
+                    <div class="step" data-step="4">4</div>
+                </div>
+            </div>
+            
+            <!-- Этап 1: Морская перевозка -->
+            <div class="journey-stage" id="stage1">
+                <div class="stage-content">
+                    <div class="stage-number">01</div>
+                    <h3 class="stage-title">Морская перевозка</h3>
+                    <p class="stage-description">Груз принимается в порту, консолидируется и отправляется морским путем. Мы работаем с крупнейшими морскими линиями и отслеживаем каждый контейнер.</p>
+                    <ul class="stage-features">
+                        <li><i class="fas fa-check"></i> Фрахт судов и контейнеров</li>
+                        <li><i class="fas fa-check"></i> Отслеживание 24/7</li>
+                        <li><i class="fas fa-check"></i> Страхование груза</li>
+                    </ul>
+                </div>
+                <div class="stage-image">
+                    <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Морской контейнеровоз" class="stage-img" loading="lazy">
+                    <div class="stage-icon ship-icon">
+                        <i class="fas fa-ship"></i>
+                        <div class="wave"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Этап 2: Железнодорожная перевозка -->
+            <div class="journey-stage" id="stage2">
+                <div class="stage-content">
+                    <div class="stage-number">02</div>
+                    <h3 class="stage-title">Железнодорожная перевозка</h3>
+                    <p class="stage-description">После прибытия в порт груз перегружается на железнодорожные платформы и отправляется по России и странам СНГ.</p>
+                    <ul class="stage-features">
+                        <li><i class="fas fa-check"></i> Повагонные и контейнерные отправки</li>
+                        <li><i class="fas fa-check"></i> Разработка схем крепления</li>
+                        <li><i class="fas fa-check"></i> Сопровождение грузов</li>
+                    </ul>
+                </div>
+                <div class="stage-image">
+                    <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Железнодорожный состав" class="stage-img" loading="lazy">
+                    <div class="stage-icon train-icon">
+                        <i class="fas fa-train"></i>
+                        <div class="track"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Этап 3: Автомобильная перевозка -->
+            <div class="journey-stage" id="stage3">
+                <div class="stage-content">
+                    <div class="stage-number">03</div>
+                    <h3 class="stage-title">Автомобильная перевозка</h3>
+                    <p class="stage-description">Финальный этап — доставка груза непосредственно до склада получателя. Мы используем современные тягачи с системой климат-контроля.</p>
+                    <ul class="stage-features">
+                        <li><i class="fas fa-check"></i> Доставка "от двери до двери"</li>
+                        <li><i class="fas fa-check"></i> Температурный режим</li>
+                        <li><i class="fas fa-check"></i> Крупногабаритные грузы</li>
+                    </ul>
+                </div>
+                <div class="stage-image">
+                    <img src="https://images.unsplash.com/photo-1601584115193-8c28d3e8b2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Грузовой тягач" class="stage-img" loading="lazy">
+                    <div class="stage-icon truck-icon">
+                        <i class="fas fa-truck"></i>
+                        <div class="road"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Этап 4: Таможенное оформление -->
+            <div class="journey-stage" id="stage4">
+                <div class="stage-content">
+                    <div class="stage-number">04</div>
+                    <h3 class="stage-title">Таможенное оформление</h3>
+                    <p class="stage-description">На всех этапах мы сопровождаем документы и обеспечиваем прохождение таможенных процедур. Как официальный таможенный представитель, мы берем на себя все формальности.</p>
+                    <ul class="stage-features">
+                        <li><i class="fas fa-check"></i> Декларирование грузов</li>
+                        <li><i class="fas fa-check"></i> Сертификация</li>
+                        <li><i class="fas fa-check"></i> Юридическая поддержка</li>
+                    </ul>
+                </div>
+                <div class="stage-image">
+                    <img src="https://images.unsplash.com/photo-1586528116311-114a4826a4b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Таможенный терминал" class="stage-img" loading="lazy">
+                    <div class="stage-icon customs-icon">
+                        <i class="fas fa-file-signature"></i>
+                        <div class="documents"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги таможенного представителя -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="fade-up">Услуги таможенного представителя</h2>
+            <div class="services-grid">
+                <div class="service-card fade-up" data-card>
+                    <div class="service-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Таможенное оформление</h3>
+                    <p>Декларирование любых грузов, включая сложные и многокомпонентные. Классификация по ТН ВЭД, сертификация, лабораторные исследования.</p>
+                    <div class="service-tags">
+                        <span class="tag">Автозапчасти</span>
+                        <span class="tag">Одежда/обувь</span>
+                        <span class="tag">Электроника</span>
+                        <span class="tag">Оборудование</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up" data-card>
+                    <div class="service-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Логистика под ключ</h3>
+                    <p>Автомобильные, ЖД, морские перевозки. Консолидация на складах в Европе, вакуумное хранение, внутрипортовое экспедирование.</p>
+                    <div class="service-tags">
+                        <span class="tag">Сборные грузы</span>
+                        <span class="tag">Крупногабаритные</span>
+                        <span class="tag">Опасные</span>
+                        <span class="tag">Режимные</span>
+                    </div>
+                </div>
+                <div class="service-card fade-up" data-card>
+                    <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Юридическая поддержка</h3>
+                    <p>Защита в судах всех уровней, бухгалтерский и таможенный аудит, страхование, помощь в спорах после выпуска товаров.</p>
+                    <div class="service-tags">
+                        <span class="tag">Аудит ВЭД</span>
+                        <span class="tag">Судебная защита</span>
+                        <span class="tag">Консультации</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Виды транспорта (с фото) -->
+    <section id="transport" class="section section-dark">
+        <div class="container">
+            <h2 class="fade-up">Доставка всеми видами транспорта</h2>
+            <div class="transport-grid">
+                <div class="transport-card fade-up" data-card>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Автомобильные перевозки" loading="lazy">
+                    </div>
+                    <h3><i class="fas fa-truck"></i> Автомобильные</h3>
+                    <p>Международные перевозки сборных и генеральных грузов, включая крупногабаритные и опасные.</p>
+                    <ul class="transport-feature">
+                        <li><i class="fas fa-check"></i> Консолидация в Риге и Клайпеде</li>
+                        <li><i class="fas fa-check"></i> Температурный контроль</li>
+                        <li><i class="fas fa-check"></i> Складские операции</li>
+                    </ul>
+                </div>
+                <div class="transport-card fade-up" data-card>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1515581246837-7c1e6c8847f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Железнодорожные перевозки" loading="lazy">
+                    </div>
+                    <h3><i class="fas fa-train"></i> Железнодорожные</h3>
+                    <p>Повагонные и контейнерные отправки по РФ и СНГ. Разработка схем крепления.</p>
+                    <ul class="transport-feature">
+                        <li><i class="fas fa-check"></i> Работа на всех крупных станциях</li>
+                        <li><i class="fas fa-check"></i> Выездное сопровождение</li>
+                        <li><i class="fas fa-check"></i> Согласование маршрутов</li>
+                    </ul>
+                </div>
+                <div class="transport-card fade-up" data-card>
+                    <div class="transport-image">
+                        <img src="https://images.unsplash.com/photo-1598520106830-8c45c2035460?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Морские перевозки" loading="lazy">
+                    </div>
+                    <h3><i class="fas fa-ship"></i> Морские</h3>
+                    <p>Оператор морского фрахта с сервис-контрактами мировых линий.</p>
+                    <ul class="transport-feature">
+                        <li><i class="fas fa-check"></i> Отслеживание на терминалах</li>
+                        <li><i class="fas fa-check"></i> Организация транзита</li>
+                        <li><i class="fas fa-check"></i> Контейнерные перевозки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Специализация по типам грузов -->
+    <section class="section">
+        <div class="container">
+            <h3 class="section-subtitle fade-up">Специализация по типам грузов</h3>
+            <div class="specialization-grid">
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-oil-can"></i>
+                    <span>Энергоносители</span>
+                    <small>Нефть, нефтепродукты, уголь</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-flask"></i>
+                    <span>Химическая продукция</span>
+                    <small>Опасные и наливные грузы</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-apple-alt"></i>
+                    <span>Растения и продукты</span>
+                    <small>Фитосанитарный контроль</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-microscope"></i>
+                    <span>Медицина и наука</span>
+                    <small>Высокотехнологичное оборудование</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-thermometer-half"></i>
+                    <span>Температурные режимы</span>
+                    <small>Продукты, медикаменты</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-boxes"></i>
+                    <span>Автокомпоненты</span>
+                    <small>Для легковых и грузовых авто</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-fish"></i>
+                    <span>Рыбопродукция</span>
+                    <small>Морепродукты, готовая продукция</small>
+                </div>
+                <div class="special-item fade-up" data-card>
+                    <i class="fas fa-seedling"></i>
+                    <span>Сельхозпродукция</span>
+                    <small>Зерно, семена, фураж</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании и клиенты -->
+    <section id="about" class="section section-dark">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-up">
+                    <h2>О компании ДЖЕМ-Трейдинг</h2>
+                    <p class="about-text">Специализируемся на внешнеэкономической деятельности, охватывая весь спектр логистических задач. Реализуем качественные решения с учетом отраслевой специфики бизнеса клиентов.</p>
+                    <p class="about-text">Особое внимание — квалификации персонала и умению быстро находить надежные решения в современных реалиях.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Свидетельство ФТС №1156 от 17.03.2020</li>
+                        <li><i class="fas fa-check-circle"></i> Широкая филиальная и агентская сеть</li>
+                        <li><i class="fas fa-check-circle"></i> Полный аутсорсинг ВЭД</li>
+                        <li><i class="fas fa-check-circle"></i> Индивидуальный подход к каждому клиенту</li>
+                    </ul>
+                </div>
+                <div class="clients-content fade-up">
+                    <h3 class="clients-title">Нам доверяют</h3>
+                    <div class="clients-grid">
+                        <div class="client-item" data-card><i class="fas fa-building"></i> Производители оборудования</div>
+                        <div class="client-item" data-card><i class="fas fa-industry"></i> Промышленные предприятия</div>
+                        <div class="client-item" data-card><i class="fas fa-car"></i> Автомобильные компании</div>
+                        <div class="client-item" data-card><i class="fas fa-seedling"></i> Агропромышленный комплекс</div>
+                        <div class="client-item" data-card><i class="fas fa-flask"></i> Химические производства</div>
+                        <div class="client-item" data-card><i class="fas fa-store"></i> Торговые сети</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и призыв к действию -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2 class="cta-title fade-up">Нужна надежная логистика?</h2>
+            <p class="cta-subtitle fade-up">Свяжитесь с нами для профессиональной консультации и расчета стоимости.</p>
+            
+            <div class="contact-form fade-up">
+                <div class="contact-info">
+                    <div class="contact-item" data-card>
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Телефон</strong>
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-card>
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:info@jam-trading.ru">info@jam-trading.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-card>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Адрес</strong>
+                            <span>Москва, ул. Логистическая, д. 1</span>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-card>
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Режим работы</strong>
+                            <span>Пн-Пт: 9:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="contactForm" class="form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Опишите вашу задачу" rows="3"></textarea>
+                    <button type="submit" class="cta-button">
+                        <i class="fas fa-paper-plane"></i> Отправить запрос
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ДЖЕМ-<span>Трейдинг</span></div>
+                <div class="footer-links">
+                    <a href="#" id="privacyPolicyLink">Политика конфиденциальности</a>
+                    <span class="separator">|</span>
+                    <span>© 2025 Все права защищены</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно с политикой конфиденциальности -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Политика конфиденциальности</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>1. Общие положения</h4>
+                <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ООО "ДЖЕМ-Трейдинг".</p>
+                
+                <h4>2. Основные понятия</h4>
+                <p>Персональные данные — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+                
+                <h4>3. Цели сбора персональных данных</h4>
+                <p>Мы собираем и храним только те персональные данные, которые необходимы для оказания услуг и консультирования клиентов:</p>
+                <ul>
+                    <li>Имя и контактные данные для связи</li>
+                    <li>Информация о компании для подготовки коммерческих предложений</li>
+                    <li>Данные, необходимые для таможенного оформления</li>
+                </ul>
+                
+                <h4>4. Защита персональных данных</h4>
+                <p>Мы принимаем необходимые организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.</p>
+                
+                <h4>5. Сроки обработки</h4>
+                <p>Персональные данные хранятся не дольше, чем этого требуют цели обработки персональных данных, если иное не предусмотрено требованиями законодательства РФ.</p>
+                
+                <h4>6. Заключительные положения</h4>
+                <p>Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к нам по электронной почте info@jam-trading.ru.</p>
+                
+                <p class="modal-date">Дата последнего обновления: 14 февраля 2026 г.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
